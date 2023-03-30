@@ -17,3 +17,4 @@ class ProductPageLocators:
     BOOK_NAME_LINK_IN_BASKET = (By.CSS_SELECTOR, "div .alertinner strong")
     BOOK_PRICE_LINK = (By.CSS_SELECTOR, "p.price_color")
     BOOK_PRICE_LINK_IN_BASKET = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-info.fade.in>.alertinner strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-success.fade.in>.alertinner")
