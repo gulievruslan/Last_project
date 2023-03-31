@@ -3,6 +3,9 @@ from selenium.webdriver.common.by import By
 
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_LINK = (By.CSS_SELECTOR, ".btn-group>.btn.btn-default")
+    PRODUCT_LINK_IN_BASKET = (By.CSS_SELECTOR, ".basket-items>.row")
+    BASKET_IS_EMPTY = (By.CSS_SELECTOR, "div #content_inner>p")
 
 
 class LoginPageLocators:
