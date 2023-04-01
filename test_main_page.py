@@ -23,10 +23,12 @@ class TestLoginFromMainPage:
 
 def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     link = "http://selenium1py.pythonanywhere.com/"
-    page = BasketPage(browser, link)
+    page = MainPage(browser, link)
     page.open()
     page.test_guest_can_go_to_basket()
-    page.test_guest_should_see_empty_basket()
+    basket_page = BasketPage(browser, browser.current_url)
+    basket_page.test_guest_should_see_empty_basket()
+    basket_page.test_quest_should_see_basket_is_empty_message()
 
 
 

@@ -1,9 +1,14 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators:
+class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
     BASKET_LINK = (By.CSS_SELECTOR, ".btn-group>.btn.btn-default")
+
+
+class BasketPageLocators:
     PRODUCT_LINK_IN_BASKET = (By.CSS_SELECTOR, ".basket-items>.row")
     BASKET_IS_EMPTY = (By.CSS_SELECTOR, "div #content_inner>p")
 
@@ -27,7 +32,4 @@ class ProductPageLocators:
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-success.fade.in>.alertinner")
 
 
-class BasePageLocators:
-    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
-    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+

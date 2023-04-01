@@ -73,6 +73,7 @@ def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
     page.open()
     page.test_guest_can_go_to_basket()
     page.test_guest_should_see_empty_basket()
+    page.test_quest_should_see_basket_is_empty_message()
 
 
 @pytest.mark.need_review
